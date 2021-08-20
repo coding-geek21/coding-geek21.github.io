@@ -390,7 +390,7 @@ body {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 800px) {
   .button {
     background-color: #9c7fe8;
     font-size: 1.8rem;
@@ -421,6 +421,10 @@ body {
 
 .project-img {
   width: 100%;
+}
+
+.project {
+  margin-bottom: 10%;
 }
 
 .project-button {
