@@ -1,0 +1,446 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: #f2f2fc;
+}
+
+.button {
+  background-color: #9c7fe8;
+  font-size: 1.8rem;
+  width: 20%;
+  text-decoration: none;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+
+.sidebar-container {
+  position: fixed;
+  width: 20%;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+  left: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: #1f163b;
+  color: #fff;
+}
+
+.sidebar-container-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+  left: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: #1f163b;
+  color: #fff;
+}
+
+.content-container {
+  padding-left: 20%;
+  padding-top: 20px;
+}
+
+.sidebar-logo {
+  padding: 10px 15px 10px 30px;
+  font-size: 2.8rem;
+  margin: 30% 0%;
+  width: 100%;
+  font-weight: 600;
+  font-family: "Rubik", sans-serif;
+}
+
+.sidebar-navigation {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  list-style-type: none;
+  position: relative;
+}
+
+.sidebar-navigation li {
+  background-color: transparent;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  font-size: 1.8rem;
+  text-decoration: none;
+  line-height: 2.2rem;
+}
+
+.sidebar-navigation li a {
+  padding: 10px 15px 10px 30px;
+  display: block;
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.sidebar-navigation li .fa {
+  margin-right: 10px;
+}
+
+.sidebar-navigation li a:active,
+.sidebar-navigation li a:focus {
+  background-color: #9c7fe8;
+  color: #06050c;
+}
+.sidebar-navigation li a:hover {
+  text-decoration: none;
+  outline: none;
+  color: #06050c;
+}
+
+.sidebar-navigation li::before {
+  background-color: #9c7fe8;
+  position: absolute;
+  content: "";
+  height: 100%;
+  left: 0;
+  color: #1f163b;
+  top: 0;
+  -webkit-transition: width 0.2s ease-in;
+  transition: width 0.2s ease-in;
+  width: 0px;
+  z-index: -1;
+}
+
+.sidebar-navigation li:hover::before {
+  width: 100%;
+}
+
+.openbtn {
+  display: none;
+  font-size: 2rem;
+  margin: 2%;
+}
+
+@media screen and (max-width: 970px) {
+  .sidebar-container {
+    position: fixed;
+    width: 0%;
+    height: 100%;
+    font-family: "Montserrat", sans-serif;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: #1f163b;
+    color: #fff;
+  }
+  .content-container {
+    padding-left: 0%;
+  }
+  .openbtn {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: white;
+    background-color: #1f163b;
+  }
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: #1f163b;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.my-img {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 2rem;
+  margin-left: 10%;
+  text-align: left;
+  color: #fafafa;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+.overlay-top {
+  margin-bottom: 60%;
+}
+
+.intro {
+  margin-top: 8%;
+  text-align: center;
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-heading {
+  margin-top: 2%;
+  font-family: "Rubik", sans-serif;
+  font-size: 3.2rem;
+  color: #302e4d;
+}
+
+.section-heading {
+  margin-top: 8%;
+  margin-bottom: 5%;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 3.2rem;
+  color: #302e4d;
+}
+
+.intro-text {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #544d66;
+}
+
+.icons {
+  border-radius: 50%;
+  width: 40px;
+  text-align: center;
+  display: inline-block;
+  height: 40px;
+  margin-left: 2%;
+  font-size: 1.8rem;
+  background-color: #1f163b;
+}
+
+.ico,
+.social-icons {
+  color: white;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.icons:hover {
+  height: 44px;
+  font-size: 2rem;
+  width: 44px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+.content-div {
+  margin: 5%;
+}
+
+/* About me section */
+
+/*Timeline container*/
+
+.container {
+  width: 80%;
+  padding: 50px 0;
+  margin: 50px auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.container:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -1px;
+  width: 2px;
+  height: 100%;
+  background: #ccd1d9;
+  z-index: 1;
+}
+
+.timeline-block {
+  width: -webkit-calc(50% + 8px);
+  width: -moz-calc(50% + 8px);
+  width: calc(50% + 8px);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  justify-content: space-between;
+  clear: both;
+}
+
+.timeline-block-right {
+  float: right;
+}
+
+.timeline-block-left {
+  float: left;
+  direction: rtl;
+}
+
+.marker {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid #f5f7fa;
+  background: #9c7fe8;
+  margin-top: 10px;
+  z-index: 9999;
+}
+
+.timeline-content {
+  width: 100%;
+  padding: 0 15px;
+  color: #666;
+}
+
+.timeline-content h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.timeline-content span {
+  font-size: 1.5rem;
+  color: #1f163b;
+}
+
+.timeline-content p {
+  font-size: 1.8rem;
+  line-height: 1.5em;
+  font-family: "Nunito", sans-serif;
+  word-spacing: 1px;
+  color: #888;
+}
+
+.interests-img {
+  width: 100%;
+}
+
+.interersts {
+  text-align: center;
+}
+
+.interest-heading,
+.project-heading {
+  margin-top: 5%;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 2.4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .container:before {
+    left: 8px;
+    width: 2px;
+  }
+  .timeline-block {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .timeline-block-right {
+    float: none;
+  }
+
+  .timeline-block-left {
+    float: none;
+    direction: ltr;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .button {
+    background-color: #9c7fe8;
+    font-size: 1.8rem;
+    width: 80%;
+    text-decoration: none;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+  }
+}
+
+/* Skills  */
+
+.skills {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.8rem;
+  color: #544d66;
+}
+.skill-img {
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+/*projects*/
+
+.project-img {
+  width: 100%;
+}
+
+.project-button {
+  background-color: #9c7fe8;
+  font-size: 1.8rem;
+  text-decoration: none;
+  width: 25%;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 30px;
+  display: inline-block;
+}
+
+.project-link {
+  color: #9c7fe8;
+  font-weight: bold;
+  margin-left: 4%;
+  font-size: 1.8rem;
+  font-family: "Nunito", sans-serif;
+  text-decoration: none;
+  display: inline-block;
+}
