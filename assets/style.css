@@ -448,3 +448,13 @@ body {
   text-decoration: none;
   display: inline-block;
 }
+
+@media screen and (max-width: 450px) {
+  .project {
+    margin-bottom: 20%;
+  }
+  .project-button {
+    width: 50%;
+    margin-bottom: 10%;
+  }
+}
