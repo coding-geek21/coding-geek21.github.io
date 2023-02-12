@@ -20,7 +20,6 @@
         <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap" rel="stylesheet">
         <!--Jquery-->
@@ -48,15 +47,15 @@
                         </a>
                     </li>
                     <li class="nav-link">
-                        <a href="#skills">
-                            <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
-                            Skills
-                        </a>
-                    </li>
-                    <li class="nav-link">
                         <a href="#experience">
                             <i class="fa fa-suitcase" aria-hidden="true"></i>
                             Experience
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#skills">
+                            <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                            Skills
                         </a>
                     </li>
                     <li class="nav-link">
@@ -151,40 +150,58 @@
                 <p class="section-heading">ABOUT</p>
                 <p class="about-heading">Education</p>
                 <div class="sideline"></div>
-                <div class="container">
-                    <div class="timeline-block timeline-block-right">
-                        <div class="marker"></div>
-                        <div class="timeline-content">
-                            <h3>B.Tech Information Technology</h3>
-                            <p>Madras Institute of Technology, Chennai</p>
-                            <span>
-                                <i class="fa fa-calendar">&ThinSpace;</i>
-                                2019-2023
-                            </span>
-                            <br>
-                            <span>
-                                GPA : &ThickSpace; 9.0/10 (as of 2
-                                <sup>nd</sup>
-                                semester)
-                            </span>
+                <ul class="timeline">
+                    <!-- Item 1 -->
+                    <li>
+                        <div class="direction-r">
+                            <div class="flag-wrapper">
+                                <span class="hexa"></span>
+                                <span class="flag">B.Tech Information Technology</span>
+                                <span class="time-wrapper">
+                                    <span class="time">
+                                        <i class="fa fa-calendar">&ThinSpace;</i>
+                                        2019-2023
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="desc">
+                                <p>
+                                    Madras Institute of Technology, Chennai
+                                    <br>
+                                    <span>
+                                        GPA : &ThickSpace; 8.66/10 (as of 6
+                                        <sup>th</sup>
+                                        semester)
+                                    </span>
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="timeline-block timeline-block-left">
-                        <div class="marker"></div>
-                        <div class="timeline-content">
-                            <h3>Senior Secondary</h3>
-                            <p>NSN Matriculation Higher Secondary School</p>
-                            <span>
-                                <i class="fa fa-calendar">&ThinSpace;</i>
-                                2017-2019
-                            </span>
-                            <br>
-                            <span>
-                                Percentage : &ThickSpace; 94%
-                            </span>
+                    </li>
+                    <!-- Item 2 -->
+                    <li>
+                        <div class="direction-l">
+                            <div class="flag-wrapper">
+                                <span class="hexa"></span>
+                                <span class="flag">High School</span>
+                                <span class="time-wrapper">
+                                    <span class="time">
+                                        <i class="fa fa-calendar">&ThinSpace;</i>
+                                        2017-2019
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="desc">
+                                <p>
+                                    NSN Matriculation Higher Secondary School
+                                    <br>
+                                    12th Grade: &ThickSpace; 94%
+                                    <br>
+                                    10th Grade: &ThickSpace; 97.8%
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                </div>
+                    </li>
+                </ul>
                 <p class="about-heading">Interests</p>
                 <div class="sideline"></div>
                 <div class="interests">
@@ -206,55 +223,60 @@
             <div class="content-div">
                 <p class="about-heading">Experience</p>
                 <div class="sideline"></div>
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-                <div id="container">
-                    <div class="product-details">
-                        <h1>Full Stack Web Developer</h1>
-                        <h3 class="m-4">Achievements/Tasks</h3>
-                        <ul style="font-size:14px">
-                            <li>
-                                Top among all the other 50+ developer interns
-                            </li>
-                            <li> Developed Authentication System for Login and Sign Up</li>
-                            <li>
-                                An online examination system for students to take exams
+                <br>
+                <br>
+                <div class="card work-card">
+                    <div class="row">
+                        <div class="col-md-6 p-5">
+                            <h2 class="">Full Stack Web Developer</h2>
+                            <h3 class="m-4">Achievements/Tasks</h3>
+                            <ul style="font-size:14px">
+                                <li>
+                                    Top among all the other 50+ developer interns
+                                </li>
+                                <li> Developed Authentication System for Login and Sign Up</li>
+                                <li>
+                                    An online examination system for students to take exams
                               and view their results has been developed
-                            </li>
-                            <li>Designed an AutoML tool</li>
-                            <li>Created a Discussion forum</li>
-                        </ul>
-                    </div>
-                    <div class="product-image">
-                        <img src="assets/images/techsnap.jpg" alt="">
-                        <div class="info">
-                            <h2> Description</h2>
-                            <ul>
-                                <li style="font-size:14px;">
-                                    <strong>About Company:</strong>
-                                    <p>
-                                        Techsnap is an all-inclusive, digitalized platform for learning
-                                    technologies, exploring careers, mentoring people and sharing projects, etc..
-                                    </p>
                                 </li>
-                                <li style="font-size:14px;">
-                                    <strong>Location</strong>
-                                    <p>
-                                        Chennai
-                                    </p>
-                                </li>
-                                <li style="font-size:14px;">
-                                    <strong>Duration</strong>
-                                    <p>
-                                        October 2021 - January 2022
-                                    </p>
-                                </li>
-                                <li style="font-size:14px;">
-                                    <strong>Contact</strong>
-                                    <p>
-                                        Sai Pavan Saketh - 97058 11666
-                                    </p>
-                                </li>
+                                <li>Designed an AutoML tool</li>
+                                <li>Created a Discussion forum</li>
                             </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="product-image">
+                                <img style="width:100%; height:100%; background-color:black;" src="assets/images/techsnap.jpg" alt="">
+                                <div class="info">
+                                    <h2> Description</h2>
+                                    <ul>
+                                        <li style="font-size:14px;">
+                                            <strong>About Company:</strong>
+                                            <p>
+                                                Techsnap is an all-inclusive, digitalized platform for learning
+                                        technologies, exploring careers, mentoring people and sharing projects, etc..
+                                            </p>
+                                        </li>
+                                        <li style="font-size:14px;">
+                                            <strong>Location</strong>
+                                            <p>
+                                                Chennai
+                                            </p>
+                                        </li>
+                                        <li style="font-size:14px;">
+                                            <strong>Duration</strong>
+                                            <p>
+                                                October 2021 - January 2022
+                                            </p>
+                                        </li>
+                                        <li style="font-size:14px;">
+                                            <strong>Contact</strong>
+                                            <p>
+                                                Sai Pavan Saketh - 97058 11666
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
